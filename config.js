@@ -1,4 +1,9 @@
 window.ALEORA_CONFIG = {
+  tracking: {
+    enabled: true,
+    endpoint:
+      "https://script.google.com/macros/s/AKfycbyc12hybr6RfbvFRQVZ_bh5A-6V2wgwnv7B1P79fkEJjIOupc3HKCOPUWAbWBT2HqJU/exec",
+  },
   links: [
     {
       id: "lavieen",
