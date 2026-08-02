@@ -2,7 +2,7 @@ window.ALEORA_CONFIG = {
   tracking: {
     enabled: true,
     endpoint:
-      "https://script.google.com/macros/s/AKfycbyc12hybr6RfbvFRQVZ_bh5A-6V2wgwnv7B1P79fkEJjIOupc3HKCOPUWAbWBT2HqJU/exec",
+      "https://script.google.com/macros/s/AKfycbxXvcWW3qbAnAsm3k5VWTwsAVi_dcns-PCAqxNff1r5R2R7xRUH2C5FuyRq50nI2xTLcQ/exec",
   },
   links: [
     {
