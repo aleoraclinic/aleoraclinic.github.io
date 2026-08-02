@@ -59,21 +59,23 @@
 
     var body = JSON.stringify(getTrackingPayload(item));
 
-    if (navigator.sendBeacon) {
-      var data = new Blob([body], { type: "text/plain;charset=UTF-8" });
-      navigator.sendBeacon(tracking.endpoint, data);
+    if (typeof window.fetch === "function") {
+      fetch(tracking.endpoint, {
+        method: "POST",
+        mode: "no-cors",
+        keepalive: true,
+        headers: { "Content-Type": "text/plain;charset=UTF-8" },
+        body: body,
+      }).catch(function () {
+        // O clique continua abrindo o destino mesmo se o registro falhar.
+      });
       return;
     }
 
-    fetch(tracking.endpoint, {
-      method: "POST",
-      mode: "no-cors",
-      keepalive: true,
-      headers: { "Content-Type": "text/plain;charset=UTF-8" },
-      body: body,
-    }).catch(function () {
-      // O clique continua abrindo o destino mesmo se o registro falhar.
-    });
+    if (navigator.sendBeacon) {
+      var data = new Blob([body], { type: "text/plain;charset=UTF-8" });
+      navigator.sendBeacon(tracking.endpoint, data);
+    }
   }
 
   function createCard(item) {
