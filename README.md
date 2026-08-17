@@ -8,16 +8,16 @@ Edite somente o arquivo `config.js` para trocar:
 
 - datas das campanhas;
 - títulos e descrições;
-- links do WhatsApp ou do Dub;
+- links do WhatsApp;
 - endereço do Instagram.
 
-Quando os três links rastreáveis do Dub estiverem prontos, substitua apenas os valores do campo `url` de cada botão.
+Os cliques dos três botões são registrados na planilha privada da Alèora pelo endereço configurado em `tracking.endpoint`. Se uma nova implantação do Apps Script for criada, atualize somente esse endereço.
 
 ## Publicação no GitHub Pages
 
 1. Crie uma conta no GitHub com o e-mail institucional da Alèora.
 2. Crie um repositório público chamado `links`.
-3. Envie todos os arquivos desta pasta para a raiz do repositório.
+3. Envie todos os arquivos desta pasta para a raiz do repositório, inclusive as duas imagens PNG.
 4. Nas configurações do repositório, abra **Pages**.
 5. Em **Build and deployment**, selecione **Deploy from a branch**.
 6. Escolha a branch `main` e a pasta `/root`.
