@@ -9,7 +9,7 @@ window.ALEORA_CONFIG = {
       id: "lavieen",
       order: "01",
       featured: true,
-      meta: "AGENDA ESPECIAL · 14 DE SETEMBRO · R$ 250",
+      meta: "AGENDA ESPECIAL · 21 DE SETEMBRO · R$ 250",
       title: "Conheça o Lavieen Day",
       description:
         "Uma experiência voltada ao cuidado da pele, com quantidade limitada de horários.",
@@ -20,7 +20,7 @@ window.ALEORA_CONFIG = {
       id: "laser",
       order: "02",
       featured: false,
-      meta: "AGENDA ESPECIAL · 05 DE OUTUBRO",
+      meta: "AGENDA ESPECIAL · 28 DE SETEMBRO",
       title: "Conheça o Laser Day",
       description:
         "Saiba mais sobre a avaliação, a experiência da sessão e os horários disponíveis.",
