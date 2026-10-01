@@ -9,23 +9,23 @@ window.ALEORA_CONFIG = {
       id: "lavieen",
       order: "01",
       featured: true,
-      meta: "AGENDA ESPECIAL · 21 DE SETEMBRO · R$ 250",
-      title: "Conheça o Lavieen Day",
+      meta: "CUIDADO COM A PELE",
+      title: "Conheça o Lavieen",
       description:
-        "Uma experiência voltada ao cuidado da pele, com quantidade limitada de horários.",
-      cta: "Consultar horários",
-      url: "https://wa.me/5511939039004?text=Ol%C3%A1%21%20Conheci%20o%20Lavieen%20Day%20da%20Al%C3%A8ora%20Clinic%20e%20gostaria%20de%20entender%20como%20funciona%20e%20consultar%20os%20hor%C3%A1rios%20dispon%C3%ADveis.%20Podem%20me%20orientar%3F",
+        "Saiba mais sobre o procedimento e tire suas dúvidas com a equipe.",
+      cta: "Saiba mais",
+      url: "https://wa.me/5511939039004?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20Lavieen%20na%20Al%C3%A8ora%20Clinic.%20Podem%20me%20orientar%3F",
     },
     {
       id: "laser",
       order: "02",
       featured: false,
-      meta: "AGENDA ESPECIAL · 28 DE SETEMBRO",
-      title: "Conheça o Laser Day",
+      meta: "DEPILAÇÃO A LASER",
+      title: "Conheça a depilação a laser",
       description:
-        "Saiba mais sobre a avaliação, a experiência da sessão e os horários disponíveis.",
+        "Converse com a equipe sobre a avaliação e como funciona o procedimento.",
       cta: "Falar com a equipe",
-      url: "https://wa.me/5511939039004?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Laser%20Day%20da%20Al%C3%A8ora%20Clinic%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20avalia%C3%A7%C3%A3o%2C%20a%20sess%C3%A3o%20e%20os%20hor%C3%A1rios%20dispon%C3%ADveis.%20Podem%20me%20orientar%3F",
+      url: "https://wa.me/5511939039004?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20depila%C3%A7%C3%A3o%20a%20laser%20na%20Al%C3%A8ora%20Clinic.%20Podem%20me%20orientar%3F",
     },
     {
       id: "orientacao",
@@ -44,3 +44,4 @@ window.ALEORA_CONFIG = {
     instagramLabel: "Instagram",
   },
 };
+
