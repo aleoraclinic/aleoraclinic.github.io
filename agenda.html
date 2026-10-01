@@ -4,25 +4,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
-    <meta
-      http-equiv="refresh"
-      content="0; url=./?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=link_bio"
-    />
     <title>Alèora Clinic</title>
     <script>
-      window.location.replace(
-        "./?utm_source=instagram&utm_medium=social&utm_campaign=link_bio"
-      );
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var tagged = ["utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "utm_id"].some(function (key) {
+          return Boolean(params.get(key));
+        });
+        // Sem identificação específica, este endereço representa o link da bio.
+        // Nunca substitua os parâmetros recebidos de uma campanha ou conteúdo.
+        if (!tagged) {
+          params.set("utm_source", "instagram");
+          params.set("utm_medium", "social");
+          params.set("utm_content", "link_bio");
+        }
+        window.location.replace("./?" + params.toString() + window.location.hash);
+      })();
     </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=./?utm_source=instagram&amp;utm_medium=social&amp;utm_content=link_bio" />
+    </noscript>
   </head>
   <body>
-    <p>
-      Redirecionando para a
-      <a
-        href="./?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=link_bio"
-      >
-        Alèora Clinic
-      </a>.
-    </p>
+    <p>Redirecionando para a <a href="./?utm_source=instagram&amp;utm_medium=social&amp;utm_content=link_bio">Alèora Clinic</a>.</p>
   </body>
 </html>
